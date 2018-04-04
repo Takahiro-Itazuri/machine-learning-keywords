@@ -17,8 +17,9 @@
   - Principal Component Analysis
 +++
 ## Within-Class Variance and Between-Class Variance
+#### Within-Class Variance
 $$
-  V_w = \frac{1}{n}
+  V_w = \frac{1}{n} \sum_{i=1}^{M} \sum_{\boldsymbol{x}_p \in C_i} (\boldsymbol{x}_p - \boldsymbol{\overline{x}}_i)^T (\boldsymbol{x}_p - \boldsymbol{\overline{x}}_i)
 $$
 ---
 ## Discriminant Function
