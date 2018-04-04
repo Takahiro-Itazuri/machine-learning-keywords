@@ -19,7 +19,7 @@
 ## Within-Class Variance and Between-Class Variance
 #### Within-Class Variance
 $$
-  V_w = \frac{1}{n} \sum_{i=1}^{M} \sum_{x_p \in C_i} (x_p - \overline{x}_i)^T (x_p - \overline{x}_i)
+  V_w = \frac{1}{n} \sum_{i=1}^{M} \sum_{x_p \in C_i} (x_p - \bar{x}_i)^T (x_p - \bar{x}_i)
 $$
 ---
 ## Discriminant Function
