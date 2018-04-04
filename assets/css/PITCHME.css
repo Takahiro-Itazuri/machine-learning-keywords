@@ -1,5 +1,5 @@
 .reveal div {
-  font-size: 16px;
+  font-size: 24px;
   text-align: left;
 }
 
@@ -22,17 +22,17 @@
 }
 
 .reveal h3 {
-  font-size: 28px;
+  font-size: 30px;
 }
 
 .reveal h4 {
-  font-size: 24px;
+  font-size: 28px;
 }
 
 .reveal h5 {
-  font-size: 20px;
+  font-size: 26px;
 }
 
 .reveal h6 {
-  font-size: 16px;
+  font-size: 14px;
 }
