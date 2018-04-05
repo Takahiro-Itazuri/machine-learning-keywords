@@ -1,16 +1,6 @@
-.reveal div {
+.reveal .slides {
   font-size: 24px;
   text-align: left;
-}
-
-.container {
-  display: flex;
-  flex-direction: row;
-  text-align: center;
-}
-
-.col {
-  width: 49%;
 }
 
 .reveal h1 {
