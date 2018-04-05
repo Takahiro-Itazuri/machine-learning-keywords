@@ -66,5 +66,23 @@ Determine that `$\boldsymbol{x}$` is in class `$c$` minimizing `$L$`.
 
 +++ 
 ## Maximum A Posteriori (MAP)
-Determine class `$c$` maximizing `$ P(c \mid \boldsymbol{x}) $`  
+Estimate class `$\hat{c}$` maximizing `$ P(c \mid \boldsymbol{x}) $`  
 `\begin{align} \hat{c} &= \mathop{\rm arg~max}\limits_{c \in C} p(c \mid \boldsymbol{x}) \\ &= \mathop{\rm arg~max}\limits_{c \in C} p (\boldsymbol{x} \mid c) P(c) \\ &= \mathop{\rm arg~max}\limits_{c in C} \left\{ \log p (\boldsymbol{x} \mid c) + \log P(C) \right\} \end{align}`
+
++++
+## Bayesian Error Rate
+`$$ e_B (\boldsymbol{x}) = 1 - P(\hat{c} \mid \boldsymbol{x}) = \mathop{\rm min}\limits_{c \in C} \left\{ 1 - P(c \mid \boldsymbol{x}) \right\} $$`
+`$$ e_B = \int \mathop{\rm min}\limits_{c \in C} \left\{ 1 - P(c \mid \boldsymbol{x}) \right\} p(\boldsymbol{x}) d\boldsymbol{x} $$`
+
++++
+## Naive Bayes Method
+Naive Bayes Method assumes that each element of `$\boldsymbol{x}$` is independet.
+Here, probabilistic model is described as follows.
+`$$ p(\boldsymbol{x} \mid c) = \prod_{i=1}^{d} p(x_i \mid c) $$`
+
++++
+## Improved Naive Bayes Method
+Improved Naive Bayes Method takes into account that elements of `$\boldsymbol{x}$` are not independent.  
+Then this method compensate for positive correlation as follows.
+`$$ \hat{c} = \mathop{\rm arg~max}\limits_{c} \prod_{i=1}^{d} {\hat{p} (x_i \mid c)}^{\alpha} \hat{P} (c) $$`
+where `$\alpha$` is a hyper parameter.
