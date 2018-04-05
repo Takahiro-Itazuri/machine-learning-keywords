@@ -43,8 +43,12 @@ Between-Class Variance
   - Improved Naive Bayes Method
 
 +++
+## Discriminant Function
+Given `$ g_1 (\boldsymbol{x}), g_2 (\boldsymbol{x}), \cdots, g_1 (\boldsymbol{x}) $` for `$ c_1, c_2, \cdots, c_M $`
+`$$ \hat{c} = \mathop{\rm arg~max}\limits_{c_i \in C} g_i (\boldsymbol{x}) $$`
++++
 ## Linear Discriminant Function
 Linear Discriminant Function (for class `$ c_i $`)  
 `$$ g_i (\boldsymbol{x}) = \boldsymbol{w}_i^T \boldsymbol{x} $$`
 where
-`\begin{align} \boldsymbol{x} = \begin{pmatrix} 1 & \boldsymbol{x}^T \end{pmatrix}^T \end{align}`
+`\begin{align} \boldsymbol{x} &= \begin{pmatrix} 1 & \boldsymbol{x}^T \end{pmatrix}^T = \begin{pmatrix} 1 & x_1 & x_2 & \cdots & x_d \end{pmatrix}^T \\ \boldsymbol{w} &= \begin{pmatrix} w_0 & w_1 & w_2 & \cdots & w_d \end{pmatrix} \end{align}`
