@@ -18,9 +18,9 @@
 +++
 ## Within-Class Variance and Between-Class Variance
 #### Within-Class Variance
-\begin{align}
-  V_w = \frac{ 1 }{ n } \sum_{ i = 1 }^{ M }
-\end{align}
+\[ V_w = \sum_{i=1}^{M} \]
+
+
 ---
 ## Discriminant Function
 - Linear Discriminant Function
