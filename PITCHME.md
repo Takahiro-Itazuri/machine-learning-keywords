@@ -17,6 +17,7 @@
 - Curse of Dimensionality
 - Dimension Reduction
   - Principal Component Analysis
+  - Singular Value Decomposition
 
 +++
 ## Within-Class Variance and Between-Class Variance
@@ -30,15 +31,21 @@ Between-Class Variance
 `$$ V_b = \frac{1}{n} \sum_{i=1}^{M} n_i \left( \bar{\boldsymbol{x]}_i - \bar{\boldsymbol{x}}} \right)^T \left( \bar{\boldsymbol{x]}_i - \bar{\boldsymbol{x}}} \right) $$`
 
 +++
-## Principal Component Analysis
+## Principal Component Analysis (PCA)
 Here, `$\hat{d}$` dimensional subspace is an orthogonal basis spanned by base vectors `$\boldsymbol{u}_1, \boldsymbol{u}_2, \cdots, \boldsymbol{u}_{\hat{d}}$`.  
 Point `$\hat{\boldsymbol{x}}$` is mapped into this `$\hat{d}$` dimensional subspace.
-`\begin{align} \hat{\boldsymbol{x}} &= (\boldsymbol{u}_1^T \boldsymbol{x}) \boldsymbol{u}_1 + (\boldsymbol{u}_2^T \boldsymbol{x}) \boldsymbol{u}_2 + \cdots + (\boldsymbol{u}_{\hat{d}}^T \boldsymbol{x}) \boldsymbol{u}_{\hat{d}} \\ &= \left( \boldsymbol{u}_1 \boldsymbol{u}_1^T + \boldsymbol{u}_2 \boldsymbol{u}_2^T + \cdots + \boldsymbol{u}_{\hat{d}} \boldsymbol{u}_{\hat{d}}^T \right) \\ &= \boldsymbol{A} \boldsymbol{A}^T \boldsymbol{x} \end{align}`
+`\begin{align} 
+  \hat{\boldsymbol{x}} &= (\boldsymbol{u}_1^T \boldsymbol{x}) \boldsymbol{u}_1 + (\boldsymbol{u}_2^T \boldsymbol{x}) \boldsymbol{u}_2 + \cdots + (\boldsymbol{u}_{\hat{d}}^T \boldsymbol{x}) \boldsymbol{u}_{\hat{d}} \\ 
+  &= \left( \boldsymbol{u}_1 \boldsymbol{u}_1^T + \boldsymbol{u}_2 \boldsymbol{u}_2^T + \cdots + \boldsymbol{u}_{\hat{d}} \boldsymbol{u}_{\hat{d}}^T \right) \\
+  &= \boldsymbol{A} \boldsymbol{A}^T \boldsymbol{x}
+ \end{align}`
 where
-`\begin{align} \boldsymbol{A} = \begin{pmatrix} \boldsymbol{u}_1 & \boldsymbol{u}_2 & \cdots & \boldsymbol{u}_{\hat{d}} \end{pmatrix} \end{align}`
+`\begin{align}
+  \boldsymbol{A} = \begin{pmatrix} \boldsymbol{u}_1 & \boldsymbol{u}_2 & \cdots & \boldsymbol{u}_{\hat{d}} \end{pmatrix}
+ \end{align}`
 
 +++
-## Principal Component Analysis (Variance Maximization)
+## PCA (Variance Maximization)
 Consider 1-dimensional subspace mapped by a base vector `$\boldsymbol{u}$`.  
 Average vector in subspace
 `$$ \hat{\boldsymbol{x}} = \frac{1}{n} \sum_{p=1}^{n} \boldsymbol{u}^T \boldsymbol{x}_p = \boldsymbol{u}^T \bar{\boldsymbol{x}} $$`
@@ -52,6 +59,14 @@ Differentiate this with respect with `$\boldsymbol{u}$`
   \boldsymbol{\Sigma} \boldsymbol{u} &= \lambda \boldsymbol{u} \\
   \boldsymbol{u}^T \boldsymbol{\Sigma} \boldsymbol{u} &= \lambda
  \end{align}`
+
+From above, determine that `$\boldsymbol{u}$` is the eigenvector corresponding maximum eigenvalue `$\lambda$`. Further components are found successively by the same process.
+
++++
+## PCA (Squared Error Minimization)
+
++++
+## Singular Value Decomposition (SVD)
 
 ---
 ## Discriminant Function
