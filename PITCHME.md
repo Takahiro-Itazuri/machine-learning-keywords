@@ -50,7 +50,7 @@ Then maximize this variance. This is calculated by method of Lagrange multiplier
 Differentiate this with respect with `$\boldsymbol{u}$`
 `\begin{align} 
   \boldsymbol{\Sigma} \boldsymbol{u} &= \lambda \boldsymbol{u} \\
-  \boldsymbol{u}^T \boldsymbol{\Sigma} boldsymbol{u} = \lambda
+  \boldsymbol{u}^T \boldsymbol{\Sigma} \boldsymbol{u} &= \lambda
  \end{align}`
 
 ---
