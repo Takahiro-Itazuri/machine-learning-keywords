@@ -29,6 +29,22 @@ Within-Class Variance
 Between-Class Variance
 `$$ V_b = \frac{1}{n} \sum_{i=1}^{M} n_i \left( \bar{\boldsymbol{x]}_i - \bar{\boldsymbol{x}}} \right)^T \left( \bar{\boldsymbol{x]}_i - \bar{\boldsymbol{x}}} \right) $$`
 
++++
+## Principal Component Analysis
+Here, `$\hat{d}$` dimensional subspace is an orthogonal basis spanned by base vectors `$\boldsymbol{u}_1, \boldsymbol{u}_2, \cdots, \boldsymbol{u}_{\hat{d}}$`.  
+Point `$\hat{\boldsymbol{x}}$` is mapped into this `$\hat{d}$` dimensional subspace.
+`\begin{align} \hat{\boldsymbol{x}} &= (\boldsymbol{u}_1^T \boldsymbol{x}) \boldsymbol{u}_1 + (\boldsymbol{u}_2^T \boldsymbol{x}) \boldsymbol{u}_2 + \cdots + (\boldsymbol{u}_{\hat{d}}^T \boldsymbol{x}) \boldsymbol{u}_{\hat{d}} \\ &= \left( \boldsymbol{u}_1 \boldsymbol{u}_1^T + \boldsymbol{u}_2 \boldsymbol{u}_2^T + \cdots + \boldsymbol{u}_{\hat{d}} \boldsymbol{u}_{\hat{d}}^T \right) \\ &= \boldsymbol{A} \boldsymbol{A}^T \boldsymbol{x} \end{align}`
+where
+`\begin{align} \boldsymbol{A} = \begin{pmatrix} \boldsymbol{u}_1 & \boldsymbol{u}_2 & \cdots & \boldsymbol{u}_{\hat{d}} \end{pmatrix} \end{align}`
+
++++
+## Principal Component Analysis (Variance Maximization)
+Consider 1-dimensional subspace mapped by a base vector `$\boldsymbol{u}$`.  
+Average vector in subspace
+`$$ \hat{\boldsymbol{x}} = \frac{1}{n} \sum_{p=1}^{n} \boldsymbol{u}^T \boldsymbol{x}_p = \boldsymbol{u}^T \bar{\boldsymbol{x}} $$`
+Variance in subspace
+`$$ \hat{\boldsymbol{\Sigma}} = \frac{1}{n} \sum_{p=1}^{n} \left( \boldsymbol{u}^T \boldsymbol{x}_p - \boldsymbol{u}^T \hat{\boldsymbol{x}} \right) \left( \boldsymbol{u}^T \boldsymbol{x}_p - \boldsymbol{u}^T \hat{\boldsymbol{x}} \right)^T = \boldsymbol{u}^T \Sigma \boldsymbol{u} $$`
+
 ---
 ## Discriminant Function
 - Linear Discriminant Function
