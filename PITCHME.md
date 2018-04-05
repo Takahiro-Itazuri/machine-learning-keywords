@@ -21,7 +21,7 @@
 +++
 ## Within-Class Variance and Between-Class Variance
 Average Vector  
-`$$ \bar{x}_i = \frac{1}{n_i} \sum_{x}^{} x_p $$`
+`$$ \bar{\boldsymbol{x}}_i = \frac{1}{n_i} \sum_{\boldsymbol{x}_p \in C_i} x_p $$`
 
 ---
 ## Discriminant Function
