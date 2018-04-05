@@ -66,5 +66,5 @@ Determine that `$\boldsymbol{x}$` is in class `$c$` minimizing `$L$`.
 
 +++ 
 ## Maximum A Posteriori (MAP)
-Determine class `$c$` maximizing `$ P(c \mid \boldsymbol{x}) $`
+Determine class `$c$` maximizing `$ P(c \mid \boldsymbol{x}) $`  
 `\begin{align} \hat{c} &= \mathop{\rm arg~max}\limits_{c \in C} p(c \mid \boldsymbol{x}) \\ &= \mathop{\rm arg~max}\limits_{c \in C} p (\boldsymbol{x} \mid c) P(c) \\ &= \mathop{\rm arg~max}\limits_{c in C} \left{ \log p (\boldsymbol{x} \mid c) + \log P(C) \right} \end{align}`
