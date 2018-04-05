@@ -1,5 +1,6 @@
 # Machine Learning Keywards
 ## Takahiro Itazuri (Waseda University)
+
 ---
 ## Pattern Recognition and Machine Learning
 - Supervise Learning
@@ -8,6 +9,7 @@
 - Unsupervised Learning
   - Clustering
 - Reinforcement Learning
+
 ---
 ## Feature Space
 - Normalization
@@ -15,12 +17,11 @@
 - Curse of Dimensionality
 - Dimension Reduction
   - Principal Component Analysis
+
 +++
 ## Within-Class Variance and Between-Class Variance
-Within-Class Variance  
-
-\begin{align} \dot{x} & = \sigma(y-x) \\ \dot{y} & = \rho x - y - xz \\ \dot{z} & = -\beta z + xy \end{align}
-
+Average Vector
+$$ x_i = \frac{1}{n_i} $$
 
 ---
 ## Discriminant Function
@@ -34,6 +35,7 @@ Within-Class Variance
   - Bayesian Error Rate
   - Naive Bayes Method
   - Improved Naive Bayes Method
+
 +++
 ## Linear Discriminant Function
 
