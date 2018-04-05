@@ -46,17 +46,25 @@ Between-Class Variance
 ## Discriminant Function
 Given a function `$ g_1 (\boldsymbol{x}), g_2 (\boldsymbol{x}), \cdots, g_1 (\boldsymbol{x}) $` for each class`$ c_1, c_2, \cdots, c_M $`
 `$$ \hat{c} = \mathop{\rm arg~max}\limits_{c_i \in C} g_i (\boldsymbol{x}) $$`
+
 +++
 ## Linear Discriminant Function
 Linear Discriminant Function (for class `$ c_i $`)  
 `$$ g_i (\boldsymbol{x}) = \boldsymbol{w}_i^T \boldsymbol{x} $$`
 where
 `\begin{align} \boldsymbol{x} &= \begin{pmatrix} 1 & \boldsymbol{x}^T \end{pmatrix}^T = \begin{pmatrix} 1 & x_1 & x_2 & \cdots & x_d \end{pmatrix}^T \\ \boldsymbol{w} &= \begin{pmatrix} w_0 & w_1 & w_2 & \cdots & w_d \end{pmatrix} \end{align}`
+
 +++
 ## Bayes Discriminant Method
 Given a loss function `$ l(c,c') $`, expectation of loss functino for input pattern `$\boldsymbol{x}$`
 `$$ L(c \mid \boldsymbol{x}) = \sum_{c' \in C} l(c, c') P(c' \mid \boldsymbol{x}) $$`
-Determine `$\boldsymbol{x}$` is in class `$c$` minimizing `$L$`.
+Determine that `$\boldsymbol{x}$` is in class `$c$` minimizing `$L$`.
 
++++
 ## Bayes' Theorem
 `$$ P ( c \mid \boldsymbol{x} ) = \frac{p( \boldsymbol{x} \mid c ) P(c)}{ p(x) } $$`
+
++++ 
+## Maximum A Posteriori (MAP)
+Determine class `$c$` maximizing `$ P(c \mid \boldsymbol{x}) $`
+`\begin{align} \hat{c} &= \mathop{\rm arg~max}\limits_{c \in C} p(c \mid \boldsymbol{x}) \\ &= \mathop{\rm arg~max}\limits_{c \in C} p (\boldsymbol{x} \mid c) P(c) \\ &= \mathop{\rm arg~max}\limits_{c in C} \left{ \log p (\boldsymbol{x} \mid c) + \log P(C) \right} \end{align}`
