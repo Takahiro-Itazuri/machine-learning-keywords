@@ -1,7 +1,3 @@
-<script type="text/javascript" async
-  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-MML-AM_CHTML">
-</script>
-
 # Machine Learning Keywards
 ## Takahiro Itazuri (Waseda University)
 
@@ -25,7 +21,7 @@
 +++
 ## Within-Class Variance and Between-Class Variance
 Average Vector  
-$$ \bar{x}_i = \frac{1}{n_i} \sum_{x}^{} x_p $$
+`$$ \bar{x}_i = \frac{1}{n_i} \sum_{x}^{} x_p $$`
 
 ---
 ## Discriminant Function
