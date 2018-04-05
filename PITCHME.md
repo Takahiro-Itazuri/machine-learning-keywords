@@ -45,6 +45,14 @@ Average vector in subspace
 Variance in subspace
 `$$ \hat{\boldsymbol{\Sigma}} = \frac{1}{n} \sum_{p=1}^{n} \left( \boldsymbol{u}^T \boldsymbol{x}_p - \boldsymbol{u}^T \hat{\boldsymbol{x}} \right) \left( \boldsymbol{u}^T \boldsymbol{x}_p - \boldsymbol{u}^T \hat{\boldsymbol{x}} \right)^T = \boldsymbol{u}^T \Sigma \boldsymbol{u} $$`
 
+Then maximize this variance. This is calculated by method of Lagrange multiplier.  
+`$$ \boldsymbol{u}^T \boldsymbol{\Sigma} \boldsymbol{u} + \lambda (1 - \boldsymbol{u}^T \boldsymbol{u}) $$`
+Differentiate this with respect with `$\boldsymbol{u}$`
+`\begin{align} 
+  \boldsymbol{\Sigma} \boldsymbol{u} &= \lambda \boldsymbol{u} \\
+  \boldsymbol{u}^T \boldsymbol{\Sigma} boldsymbol{u} = \lambda
+ \end{align}`
+
 ---
 ## Discriminant Function
 - Linear Discriminant Function
