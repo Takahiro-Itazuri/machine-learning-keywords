@@ -77,17 +77,18 @@ From above, determine that `$\boldsymbol{u}$` is the eigenvector corresponding m
   - Lasso Regression
   - Ridge Regression
 - Kernel Method
+  - Kernel Ridge Regression
 
 +++
 ## Discriminant Function
-Given a function `$ g_1 (\boldsymbol{x}), g_2 (\boldsymbol{x}), \cdots, g_1 (\boldsymbol{x}) $` for each class`$ c_1, c_2, \cdots, c_M $`
+Given a function `$ g_1 (\boldsymbol{x}), g_2 (\boldsymbol{x}), \cdots, g_1 (\boldsymbol{x}) $` for each class`$ c_1, c_2, \cdots, c_M $`<br>
 `$$ \hat{c} = \mathop{\rm arg~max}\limits_{c_i \in C} g_i (\boldsymbol{x}) $$`
 
 +++
 ## Linear Discriminant Function
-Linear Discriminant Function (for class `$ c_i $`)  
+Linear Discriminant Function (for class `$ c_i $`) <br>
 `$$ g_i (\boldsymbol{x}) = \boldsymbol{w}_i^T \boldsymbol{x} $$`
-where
+where<br>
 `\begin{align} \boldsymbol{x} &= \begin{pmatrix} 1 & \boldsymbol{x}^T \end{pmatrix}^T = \begin{pmatrix} 1 & x_1 & x_2 & \cdots & x_d \end{pmatrix}^T \\ \boldsymbol{w} &= \begin{pmatrix} w_0 & w_1 & w_2 & \cdots & w_d \end{pmatrix} \end{align}`
 
 +++
@@ -122,6 +123,25 @@ Given `$ n $` samples `$ ({\bf x}_1, y_1), \cdots, ({\bf x}_n, y_n) $`<br>
 Ridge Regression can be formulated as follows:<br>
 `$$ {\bf w} = \mathop{\rm arg~min}\limits_{\bf w} \frac{1}{2} \| {\bf Xw} - {\bf y} \|^2 + \lambda \| {\bf w} \|^2 $$`
 `$$ {\bf w} = \left( {\bf X}^T {\bf X} + \lambda {\bf I} \right)^{-1} {\bf X}^T {\bf y} $$`
+
++++ 
+## Kernel Methods
+Linear Discriminant Model<br>
+`$$ g({\bf \phi} ({\bf x}) ) = {\bf w}^T {\bf \phi} ({\bf x}) $$`
+Kernel Function<br>
+`$$ k({bf x}, {\bf x'}) = {\bf \psi} ({\bf x})^T {\bf \psi} ({\bf x'})^T $$`
+Given `$ n $` samples `$ ({\bf x}_1, y_1), \cdots, ({\bf x}_n, y_n) $`<br>
+`$$ {\bf \Psi} = ({\bf \psi}({\bf x}_1), {\bf \psi}({\bf x}_2), \cdots, {\bf \psi)({\bf x}_n))^T $$`
+`$$ {\bf y} = (y_1, y_2, \cdots, y_n)^T $$`
+Regression problem can be reformulated as follows:<br>
+`$$ {\bf w} = {\bf \Psi}^T {\bf a} $$`
+`$$ g({\bf \psi} ({\bf x}) ) = {\bf a}^T {\bf \Psi} {\bf \psi}({\bf x}) \sum_{i=1}^{n} a_i k({\bf x_i}, {\bf x}) $$`
+
+
+## Kernel Ridge Regression
+Given `$ n $` samples `$ ({\bf x}_1, y_1), \cdots, ({\bf x}_n, y_n) $`<br>
+`$$ {\bf X} = ({\bf x}_1, {\bf x}_2, \cdots, {\bf x}_n)^T $$`
+`$$ {\bf y} = (y_1, y_2, \cdots, y_n)^T $$`
 
 
 ---
