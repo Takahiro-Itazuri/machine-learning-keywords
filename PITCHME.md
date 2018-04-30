@@ -95,6 +95,10 @@ where
 
 +++
 ## Least Squares Method
+Least Squares Method minimizes the sum of square errors.<br>
+Given `$ n $` samples `$ ({\bf x}_1, y_1), \cdots, ({\bf x}_n, y_n) $`
+Least Squares Method can be formulated as follows:
+`$$  $$`
 
 +++
 ## Lasso Regression
@@ -113,7 +117,7 @@ where
   - Naive Bayes Method
   - Improved Naive Bayes Method
 
-  +++
++++
 ## Bayes Discriminant Method
 Given a loss function `$ l(c,c') $`, expectation of loss functino for input pattern `$\boldsymbol{x}$`
 `$$ L(c \mid \boldsymbol{x}) = \sum_{c' \in C} l(c, c') P(c' \mid \boldsymbol{x}) $$`
