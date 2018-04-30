@@ -69,17 +69,14 @@ From above, determine that `$\boldsymbol{u}$` is the eigenvector corresponding m
 ## Singular Value Decomposition (SVD)
 
 ---
-## Discriminant Function
+## Discriminant Function Based Method
 - Linear Discriminant Function
   - Linearly Separable
   - Linear Discriminant Analysis (LDA)
   - Least Squares Method
-- Bayes Discriminant Method
-  - Bayes' Theorem
-  - Maximum A Posteriori (MAP)
-  - Bayesian Error Rate
-  - Naive Bayes Method
-  - Improved Naive Bayes Method
+  - Lasso Regression
+  - Ridge Regression
+- Kernel Method
 
 +++
 ## Discriminant Function
@@ -94,6 +91,29 @@ where
 `\begin{align} \boldsymbol{x} &= \begin{pmatrix} 1 & \boldsymbol{x}^T \end{pmatrix}^T = \begin{pmatrix} 1 & x_1 & x_2 & \cdots & x_d \end{pmatrix}^T \\ \boldsymbol{w} &= \begin{pmatrix} w_0 & w_1 & w_2 & \cdots & w_d \end{pmatrix} \end{align}`
 
 +++
+## Linear Discriminant Analysis (LDA)
+
++++
+## Least Squares Method
+
++++
+## Lasso Regression
+
++++
+## Ridge Regression
+
+
+
+---
+## Probabilistic Model Based Method
+- Bayes Discriminant Method
+  - Bayes' Theorem
+  - Maximum A Posteriori (MAP)
+  - Bayesian Error Rate
+  - Naive Bayes Method
+  - Improved Naive Bayes Method
+
+  +++
 ## Bayes Discriminant Method
 Given a loss function `$ l(c,c') $`, expectation of loss functino for input pattern `$\boldsymbol{x}$`
 `$$ L(c \mid \boldsymbol{x}) = \sum_{c' \in C} l(c, c') P(c' \mid \boldsymbol{x}) $$`
