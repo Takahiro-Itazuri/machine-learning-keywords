@@ -148,6 +148,12 @@ Ridge Regression for `$ g({\bf \psi} ({\bf x})) $` is given as follows:<br>
 `$$ {\bf w} = \methop{\rm arg~min}\limits_{\bf w} \frac{1}{2} \| {\bf \Psi w} - {\bf y} \|^2 + \frac{\lambda}{2} \| {\bf w} \|^2  $$`
 `$$ {\bf \Psi}^T \left( {\bf \Psi} w - {\bf y} \right) + \lambda {\bf w} = {\bf 0} $$`
 `$$ {\bf w} = - \frac{1}{\lambda} {\bf \Psi}^T \left( {\bf \Psi w} - y \right) = {\bf \Psi}^T a $$`
+`$$ {\bf a} = \mathop{\rm arg~min}\limits_{\bf a} \frac{1}{2} \| {\bf \Psi} {\bf \Psi}^T {\bf a} - {\bf y} \|^2 + \frac{\lambda}{2} \| {\bf \Psi}^T {\bf a} \|^2 $$`
+`$$ {\bf a} = \left( {\bf \Psi} {\bf \Psi}^T + \lambda {\bf I} \right)^{-1} {\bf y} = \left( G + \lambda {\bf I} \right)^{-1} {\bf y} $$`
+Therefore, `$ g({\bf \psi} ({\bf x})) $` can be calculated without `$ {\bf \psi} $`<br>
+`$$ g({\bf \psi} ({\bf x})) = {\bf y}^T \left( {\bf G} + \lambda {\bf I} \right)^{-1} {\bf k} ({\bf x}) $$`
+where<br>
+`$$ {\bf k} ({\bf x}) = \left( k({\bf x}_1, {\bf x}), k({\bf x}_2, {\bf x}), \cdots, k({\bf x}_n, {\bf x}) \right)^T $$`
 
 ---
 ## Probabilistic Model Based Method
