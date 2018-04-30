@@ -131,7 +131,7 @@ Linear Discriminant Model<br>
 Kernel Function<br>
 `$$ k({bf x}, {\bf x'}) = {\bf \psi} ({\bf x})^T {\bf \psi} ({\bf x'})^T $$`
 Given `$ n $` samples `$ ({\bf x}_1, y_1), \cdots, ({\bf x}_n, y_n) $`<br>
-`$$ {\bf \Psi} = ({\bf \psi}({\bf x}_1), {\bf \psi}({\bf x}_2), \cdots, {\bf \psi)({\bf x}_n))^T $$`
+`$$ {\bf \Psi} = ({\bf \psi} ({\bf x}_1), {\bf \psi} ({\bf x}_2), \cdots, {\bf \psi} ({\bf x}_n) )^T $$`
 `$$ {\bf y} = (y_1, y_2, \cdots, y_n)^T $$`
 Regression problem can be reformulated as follows:<br>
 `$$ {\bf w} = {\bf \Psi}^T {\bf a} $$`
