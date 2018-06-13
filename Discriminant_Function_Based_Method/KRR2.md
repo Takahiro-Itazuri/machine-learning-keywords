@@ -9,5 +9,5 @@ By using this Gram matrix, `$\boldsymbol{a}$` can be calculated as follows:<br>
 Therefore, `$ g(\boldsymbol{\phi} (\boldsymbol{x})) $` can be calculated without `$ \boldsymbol{\phi} $`<br>
 `$$ g(\boldsymbol{\phi} (\boldsymbol{x})) = \boldsymbol{y}^T \left( \boldsymbol{G} + \lambda \boldsymbol{I} \right)^{-1} \boldsymbol{k} (\boldsymbol{x}) $$`
 where<br>
-`$$ \boldsymbol{k} (\boldsymbol{x}) = \left( k(\boldsymbol{x}_1, \boldsymbol{x}), k(\boldsymbol{x}_2, \boldsymbol{x}), \cdots, k(\boldsymbol{x}_n, \boldsymbol{x}) \right)^T $$`
+`$$ \boldsymbol{k} (\boldsymbol{x}) = \left( \kappa (\boldsymbol{x}_1, \boldsymbol{x}), \kappa (\boldsymbol{x}_2, \boldsymbol{x}), \cdots, \kappa (\boldsymbol{x}_n, \boldsymbol{x}) \right)^T $$`
  
