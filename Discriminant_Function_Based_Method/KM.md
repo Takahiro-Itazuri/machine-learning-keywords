@@ -1,4 +1,5 @@
 ## Kernel Methods
+
 Linear Discriminant Model<br>
 `$$ g(\boldsymbol{\phi} (\boldsymbol{x}) ) = \boldsymbol{w}^T \boldsymbol{\phi} (\boldsymbol{x}) $$`
 Kernel Function<br>
