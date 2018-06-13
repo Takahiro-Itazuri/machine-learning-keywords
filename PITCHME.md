@@ -43,7 +43,7 @@
 +++?include=Discriminant_Function_Based_Method/LS.md
 +++?include=Discriminant_Function_Based_Method/LR.md
 +++?include=Discriminant_Function_Based_Method/RR.md
-+++?include=Discriminant_Function_Based_Method/KM.md 
++++?include=Discriminant_Function_Based_Method/KM.md
 +++?include=Discriminant_Function_Based_Method/KRR.md
 
 ---
