@@ -1,11 +1,8 @@
 .reveal .slides {
   font-size: 24px;
   text-align: left;
-}
-
-.reveal .slides section {
-  margin-left: 2%;
-  margin-right: 2%;
+  padding-left: 2%;
+  padding-right: 2%;
 }
 
 .reveal h1 {
