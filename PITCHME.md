@@ -43,9 +43,8 @@
 +++?include=Discriminant_Function_Based_Method/LS.md
 +++?include=Discriminant_Function_Based_Method/LR.md
 +++?include=Discriminant_Function_Based_Method/RR.md
-+++?include=Discriminant_Function_Based_Method/KM1.md
-+++?include=Discriminant_Function_Based_Method/KM2.md
-+++?include=Discriminant_Function_Based_Method/KRR.md
++++?include=Discriminant_Function_Based_Method/KRR1.md
++++?include=Discriminant_Function_Based_Method/KRR2.md
 
 ---
 ## Probabilistic Model Based Method
