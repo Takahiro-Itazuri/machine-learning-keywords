@@ -1,4 +1,4 @@
-## Kernel Methods
+## Kernel Ridge Regression
 
 Linear Discriminant Model can be reformulated by using Kernel Function `$\kappa$`  as follows:<br>
 `$$ g(\boldsymbol{\phi} (\boldsymbol{x}) ) = \boldsymbol{a}^T \boldsymbol{\Phi} \boldsymbol{\phi}(\boldsymbol{x}) = \sum_{i=1}^{n} a_i \kappa (\boldsymbol{x_i}, \boldsymbol{x}) $$`
