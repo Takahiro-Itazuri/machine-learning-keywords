@@ -3,7 +3,8 @@
   text-align: left;
 }
 
-section.present {
+.reveal .slides > section,
+.reveal .slides > section > section {
   width: 96%;
   margin-left: 2%;
   margin-right: 2%;
